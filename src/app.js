@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//styles
+// styles
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
-ReactDOM.render(<p>hello</p>, document.getElementById('app'));
+// components import
+import Page from "./components/Page";
+
+ReactDOM.render(<Page />, document.getElementById('app'));
