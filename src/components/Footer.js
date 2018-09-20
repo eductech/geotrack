@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer footer_card">
       <div className="footer_company-info">
         <h3>GEOTRACK</h3>
         <small>&copy; Geotrack Ink. All right reserved 2016</small>

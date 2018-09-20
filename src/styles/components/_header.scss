@@ -1,0 +1,18 @@
+.header {
+  flex: 0 0 auto;
+  display: flex;
+
+  &_card {
+    @include card;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    flex: 0 0 auto;
+
+  }
+}
