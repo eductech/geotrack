@@ -1,0 +1,6 @@
+.message {
+  &_card {
+    @include card;
+    @include rounded-corners;
+  }
+}

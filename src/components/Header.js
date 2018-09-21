@@ -14,7 +14,7 @@ const Header = () => {
       </div>
       <nav className="header_nav">
         <ul>
-          <li><a href="#" title="go to Geomap section">GEOMAP</a></li>
+          <li className="active"><a href="#" title="go to Geomap section">GEOMAP</a></li>
           <li><a href="#" title="go to Home section">HOME</a></li>
           <li><a href="#" title="go to About section">ABOUT</a></li>
           <li><a href="#" title="go to Features section">FEATURES</a></li>

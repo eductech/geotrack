@@ -3,10 +3,14 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.1rem;
-  padding: 1.5rem ;
+  padding: 1.5rem 7rem;
 
   &_card {
     @include card;
+  }
+
+  >* {
+    margin: 0 1.5rem;
   }
 }
 
@@ -47,6 +51,20 @@
 
     li {
       flex: 0 0 auto;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      @include text-muted;
+      
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
+    }
+
+    li.active, li:hover {
+      opacity: 1.0;
     }
   }
 }
@@ -58,14 +76,23 @@
     margin-bottom: 0;
     @include text-muted;
     display: flex;
+    background-color: #f7f8fd;
+    padding: 1rem;
+    @include rounded-corners;
 
     button {
       flex: 0 0 auto;
       border: none;
-      background-color: unset;
+      opacity: 0.6;
+      background-color: transparent;
+      margin-right: 0.5rem;
     }
 
-    
+    input {
+      flex: 1 0 auto;
+      background-color: #f7f8fd;
+      border: none;
+    }
   }
 }
 

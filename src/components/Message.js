@@ -2,7 +2,7 @@ import React from "react";
 
 const Message = () => {
   return (
-    <section className="message">
+    <section className="message message_card">
       <img className="message__logo" src="/images/mess.png" alt="Message" />
       <div className="message__body">
         <p className="message__heading">Geo Message</p>

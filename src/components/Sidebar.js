@@ -12,30 +12,32 @@ const Sidebar = () => {
       </header>
       <address className="sidebare__address">
         <table>
-          <tr>
-            <td>Geo Type:</td>
-            <td>Goverment</td>
-          </tr>
-          <tr>
-            <td>Short Geo:</td>
-            <td>CA_University</td>
-          </tr>
-          <tr>
-            <td>Address:</td>
-            <td>United States, California LA, Sarigza Avenue 234, 44A</td>
-          </tr>
-          <tr>
-            <td>Email:</td>
-            <td><a href="mailto:ca@university@gmail.com">ca@university@gmail.com</a></td>
-          </tr>
-          <tr>
-            <td>Expire:</td>
-            <td><time dateTime="2016-10-31">31 Oct 2016</time></td>
-          </tr>
-          <tr>
-            <td>Privacy:</td>
-            <td>Enable</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Geo Type:</td>
+              <td>Goverment</td>
+            </tr>
+            <tr>
+              <td>Short Geo:</td>
+              <td>CA_University</td>
+            </tr>
+            <tr>
+              <td>Address:</td>
+              <td>United States, California LA, Sarigza Avenue 234, 44A</td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td><a href="mailto:ca@university@gmail.com">ca@university@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td>Expire:</td>
+              <td><time dateTime="2016-10-31">31 Oct 2016</time></td>
+            </tr>
+            <tr>
+              <td>Privacy:</td>
+              <td>Enable</td>
+            </tr>
+          </tbody>
         </table>
       </address>
       <footer className="sidebar__footer">

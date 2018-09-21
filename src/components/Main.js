@@ -7,7 +7,7 @@ import Sidebar from "./Sidebar";
 const Main = () => {
   return (
     <main className="main">
-      <aside className="main__sidebar">
+      <aside className="main__sidebar main__sidebar_card">
         <Sidebar />
       </aside>
       <article className="main__content">
