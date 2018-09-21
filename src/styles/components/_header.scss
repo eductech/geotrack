@@ -1,6 +1,9 @@
 .header {
   flex: 0 0 auto;
   display: flex;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  padding: 1.5rem ;
 
   &_card {
     @include card;
@@ -8,11 +11,78 @@
 }
 
 .header__logo {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
 
   img {
     flex: 0 0 auto;
+  }
 
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 1rem;
+
+    h3 {
+      margin: 0.2rem 0;
+      font-size: 100%;
+    }
+
+    small {
+      @include text-muted;
+      letter-spacing: normal;
+    }
+  }
+}
+
+.header_nav {
+  flex: 0 0 auto;
+  
+  ul {
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+
+    li {
+      flex: 0 0 auto;
+    }
+  }
+}
+
+.header__search {
+  flex: 1 0 auto;
+
+  form {
+    margin-bottom: 0;
+    @include text-muted;
+    display: flex;
+
+    button {
+      flex: 0 0 auto;
+      border: none;
+      background-color: unset;
+    }
+
+    
+  }
+}
+
+.header__avatar {
+  flex: 0 0 auto;
+  position: relative;
+
+  img {
+    width: 44px;
+    height: 44px;
+  }
+
+  div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0) 40%);
   }
 }
