@@ -1,7 +1,39 @@
 .footer {
   flex: 0 0 auto;
+  display: flex;
+  padding: 1.5rem 7rem;
+  align-items: center;
   
   &_card {
     @include card;
+  }
+
+  .footer__company-info {
+    @include text-muted;
+    flex: 1 1 auto;
+  }
+
+  .footer__link {
+    flex: 0 0 auto;
+    text-decoration: none;
+    @include text-muted;
+    &:hover {
+      opacity: 1;
+    }
+
+    &_ref {
+      margin: 0 4rem;
+      color: $black;
+      font-weight: 700;
+      font-size: 80%;
+    }
+
+    &_social {
+      margin: 0 2rem;
+    }
+  }
+
+  a:last-of-type {
+    margin-right: 0;
   }
 }

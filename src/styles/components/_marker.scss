@@ -1,0 +1,50 @@
+.marker {
+  position: relative;
+  cursor: pointer;
+}
+
+.marker__pointer {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.marker__circle {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.marker__circle_one {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(179, 195, 250, 0.7);
+}
+
+.marker__circle_two {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(209, 218, 251, 0.7);
+}
+
+.marker__circle_three {
+  width: 90px;
+  height: 90px;
+  background-color: rgba(209, 218, 251, 0.3);
+}
+
+.marker__circle_four {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(209, 218, 251, 0.3);
+}
+
+.marker__circle_five {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(209, 218, 251, 0.3);
+}

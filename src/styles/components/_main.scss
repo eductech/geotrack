@@ -5,7 +5,8 @@
 }
 
 .main__sidebar {
-  flex: 0 0 auto;
+  flex: 0 0 400px;
+  display: flex;
 
   &_card {
     @include card;
@@ -14,6 +15,8 @@
 }
 
 .main__content {
-  flex: 1 1 auto;
+  flex: 1 1 500px;
   margin-left: 3.5rem;
+  display: flex;
+  flex-direction: column;
 }

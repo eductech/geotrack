@@ -1,0 +1,14 @@
+.map {
+  overflow: hidden;
+  flex: 1 1;
+
+  &_card {
+    @include card;
+    @include rounded-corners;
+  }
+}
+
+.gmnoprint, .gm-fullscreen-control,
+.gm-style-cc {
+  display: none;
+}

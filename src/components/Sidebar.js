@@ -1,16 +1,23 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <header className="sidebare__header">
-        <img src="/images/univ.png" alt="University"/>
-        <img src="/images/qr.png" alt="QR code"/>
+      <header className="sidebar__header">
+        <div>
+          <img src="/images/univ.png" alt="University"/>
+          <div>
+            <img src="/images/qr.png" alt="QR code"/>
+          </div>
+          <button title="hide desription"><FontAwesomeIcon icon={faAngleRight} /></button>
+        </div>
         <h1>California University</h1>
         <a href="#">ID: 1554898749848498798484654877</a>
-        <button>Copy in buffer</button>
+        <button title="Copy info in buffer">Copy in buffer</button>
       </header>
-      <address className="sidebare__address">
+      <address className="sidebar__address">
         <table>
           <tbody>
             <tr>
@@ -41,7 +48,7 @@ const Sidebar = () => {
         </table>
       </address>
       <footer className="sidebar__footer">
-        <button>Edit Profile</button>
+        <button title="Edit profile">Edit Profile</button>
       </footer>
     </div>
   )
