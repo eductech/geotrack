@@ -10,7 +10,7 @@
     "build": "webpack",
     "dev-server": "webpack-dev-server",
     "start": "node server/server.js",
-    "heroku-postbuild": "npm run build:prod"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
