@@ -3,6 +3,7 @@
   display: flex;
   padding: 1.5rem 7rem;
   align-items: center;
+  flex-wrap: wrap-reverse;
   
   &_card {
     @include card;
@@ -10,13 +11,41 @@
 
   .footer__company-info {
     @include text-muted;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+  }
+
+  .footer__reference, .footer__social {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer__social {
+    >a:last-of-type {
+      margin-right: 0;
+
+      @media screen and (max-width: 991px){
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .footer__social, .footer__reference {
+      justify-content: center;
+    }
   }
 
   .footer__link {
     flex: 0 0 auto;
     text-decoration: none;
     @include text-muted;
+    height: 40px;
+    line-height: 40px;
     &:hover {
       opacity: 1;
     }
@@ -31,9 +60,5 @@
     &_social {
       margin: 0 2rem;
     }
-  }
-
-  a:last-of-type {
-    margin-right: 0;
   }
 }

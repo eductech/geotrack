@@ -8,7 +8,7 @@ const Marker = () => {
       <div className="marker__circle marker__circle_three"></div>
       <div className="marker__circle marker__circle_two"></div>
       <div className="marker__circle marker__circle_one"></div>
-      <img className="marker__pointer" src="/images/marker.png" />
+      <div className="marker__pointer" />
     </div>
   );
 }

@@ -14,20 +14,24 @@ const Footer = () => {
         <h3>GEOTRACK</h3>
         <small>&copy; Geotrack Ink. All right reserved 2016</small>
       </div>
-      <a className="footer__link footer__link_ref" href="#">APP API</a>
-      <a className="footer__link footer__link_ref" href="#">SUPPORT</a>
-      <a className="footer__link footer__link_social" href="#">
-        <FontAwesomeIcon icon={faFacebook}/>
-      </a>
-      <a className="footer__link footer__link_social" href="#">
-        <FontAwesomeIcon icon={faTwitter}/>
-      </a>
-      <a className="footer__link footer__link_social" href="#">
-        <FontAwesomeIcon icon={faInstagram}/>
-      </a>
-      <a className="footer__link footer__link_social" href="#">
-        <FontAwesomeIcon icon={faVimeoV}/>
-      </a>
+      <div className="footer__reference">
+        <a className="footer__link footer__link_ref" href="#">APP API</a>
+        <a className="footer__link footer__link_ref" href="#">SUPPORT</a>
+      </div>
+      <div className="footer__social">
+        <a className="footer__link footer__link_social" href="#">
+          <FontAwesomeIcon icon={faFacebook}/>
+        </a>
+        <a className="footer__link footer__link_social" href="#">
+          <FontAwesomeIcon icon={faTwitter}/>
+        </a>
+        <a className="footer__link footer__link_social" href="#">
+          <FontAwesomeIcon icon={faInstagram}/>
+        </a>
+        <a className="footer__link footer__link_social" href="#">
+          <FontAwesomeIcon icon={faVimeoV}/>
+        </a>
+      </div>
     </footer>
   );
 }

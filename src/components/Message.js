@@ -12,6 +12,7 @@ const Message = () => {
           process and understand the meaning of the vote.
         </p>
       </div>
+      <button className="message__btn-show" title="Show message"></button>
     </section>
   );
 }

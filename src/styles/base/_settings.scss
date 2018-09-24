@@ -7,7 +7,7 @@ $blue: rgb(0,0,255);
 $border: 1px solid rgba(0,0,0,0.05);
 
 @mixin card {
-  background-color: #ffffff;
+  background-color: $white;
   box-shadow: 0 0 24px rgba(0,0,0,0.10);
 }
 
@@ -21,4 +21,13 @@ $border: 1px solid rgba(0,0,0,0.05);
 
 @mixin card-padding {
   padding: 2rem 3rem;
+}
+
+@mixin btn-reset {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  &:focus {
+    outline: none;
+  }
 }

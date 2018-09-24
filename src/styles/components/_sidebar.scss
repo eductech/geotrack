@@ -1,7 +1,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 100%;
 
   .sidebar__header {
     flex: 0 0 auto;
@@ -9,6 +9,10 @@
     flex-direction: column;
     @include card-padding;
     border-bottom: $border;
+
+    @media screen and (max-width: 767px) {
+      align-items: center;
+    }
 
     >div {
       display: flex;
@@ -40,6 +44,10 @@
         &:hover {
           opacity: 1.0;
         }
+
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
       }
     }
   
@@ -54,14 +62,13 @@
     }
 
     >button {
+      @include btn-reset;
       margin-top: 1.3rem;
       width: 120px;
-      border: none;
       background-color: $grey-background;
       padding: 0.8rem 1rem;
       border-radius: 4px;
       font-size: 1.2rem;
-      cursor: pointer;
       @include text-muted;
     }
   }
@@ -73,19 +80,25 @@
     flex: 1 1 auto;
     font-style: normal;
 
+    @media screen and (max-width: 480px) {
+      padding: 0.7rem;
+    }
+
     table {
       border-spacing: 0 1.5rem;
+      @include text-muted;
 
       >tbody {
         >tr {
           >td:first-of-type {
             width: 90px;
             vertical-align: top;
+            font-weight: 700;
           }
     
           >td:last-of-type {
-            @include text-muted;
             padding-left: 4rem;
+            vertical-align: top;
 
             a {
               text-decoration: none;

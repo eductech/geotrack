@@ -4,19 +4,35 @@
   align-items: flex-start;
   margin-bottom: 3.5rem;
 
+  @media screen and (max-width: 991px) {
+      margin: 0;
+  }
+
   &_card {
     @include card;
     @include rounded-corners;
     @include card-padding;
+
+    @media screen and (max-width: 991px) {
+      padding: 0;
+    }
   }
 
   .message__logo {
     flex: 0 0 auto;
     margin-right: 3rem;
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
   }
 
   .message__body {
     flex: 1 1 auto;
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
   }
 
   .message__heading {
@@ -27,5 +43,21 @@
     margin: 0;
 
     @include text-muted;
+  }
+
+  .message__btn-show {
+    @include btn-reset;
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    z-index: 1;
+    width: 37px;
+    height: 39px;
+    background: center / contain no-repeat url(/images/mess.png);
+
+    @media screen and (max-width: 991px) {
+      display: block;
+    }
   }
 }
